@@ -1,11 +1,13 @@
-ultimo = 1
-penultimo = 1
-conta = 1
-print(ultimo)
-print(penultimo)
-while conta <= 9:
+n = int(input("Que termo deseja encontrar: "))
+ultimo=1
+penultimo=1
+
+if (n==1) or (n==2):
+    print("1")
+else:
+    for count in range(2,n):
         termo = ultimo + penultimo
         penultimo = ultimo
         ultimo = termo
-        conta += 1
-        print(termo,end=" ")
+        count += 1
+    print(termo)
