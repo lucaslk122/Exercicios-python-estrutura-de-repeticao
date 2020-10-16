@@ -1,6 +1,5 @@
-import time
-
-while True:
+pergunta = "s"
+while pergunta == "s":
     precos_produtos = []
     preco_produto = True
     n_produto = 1
@@ -17,8 +16,6 @@ while True:
     while dinheiro < sum(precos_produtos):
         dinheiro = float(input("Digite a quantida que irá pagar[maior que o total da compra] : "))
 
-    print("Dinheiro: R$", dinheiro)
-    print("Troco: R$", round(dinheiro - sum(precos_produtos)))
-    print("\nPróxima compra em 3 segundos...")
-    time.sleep(3)
-    print("\n" * 5)
+    print(f"Dinheiro: R${dinheiro}")
+    print(f"Troco: R${round(dinheiro - sum(precos_produtos))}")
+    pergunta = input("Deseja continuar? s/n: ").lower()
