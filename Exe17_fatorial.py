@@ -1,8 +1,8 @@
-numero = int(input("Digite um número: "))
-count1 = 0
-count = 1
-while count1 < numero:
-    fatorial = numero * (numero - count)
-    count -= 1
-    count1 += 1
-print(fatorial)
+import math
+from math import factorial
+num = int(input("Digite um numero: "))
+#print(f"o fatorial de {num} é {math.factorial(num)}")
+factorial = 1
+for i in range(1,num + 1):
+    factorial = factorial * i
+print(factorial)
