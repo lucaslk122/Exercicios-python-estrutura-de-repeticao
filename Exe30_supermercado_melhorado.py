@@ -6,4 +6,4 @@ while qtd_itens < 1 or  qtd_itens > 50:
     print("Quantidade invalida")
     qtd_itens = int(input("Qual a quantidade de itens?: "))
 totalApagar = qtd_itens * preço_paes
-print(f"Voce pagará R${round(totalApagar,2)} por {qtd_itens} itens")
+print(f"Voce pagará R${round(totalApagar,2)} por {qtd_itens} paes")
