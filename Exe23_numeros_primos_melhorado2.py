@@ -1,4 +1,4 @@
-numero = int(input("\nDigite um número: "))
+numero = int(input("Digite um número: "))
 lista = []
 divisoes = 0
 
@@ -8,5 +8,5 @@ for i in range(numero + 1):
         divisoes += 1
     else:
         divisoes += 1
-print("Números primos: ", lista)
-print("Número de divisões", divisoes)
+print(f"Números primos: {lista} ")
+print(f"Número de divisões: {divisoes}")
