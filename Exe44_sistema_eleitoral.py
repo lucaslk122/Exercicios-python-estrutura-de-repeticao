@@ -38,4 +38,3 @@ print(f"Votos na candidata Pedro: {pedro}")
 print(f"Votos no candidato Miguel: {miguel}")
 print(f"Voto nulo: {nulo}")
 print(f"Voto Branco: {branco}")
-
